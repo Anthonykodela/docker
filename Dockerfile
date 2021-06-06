@@ -1,2 +1,2 @@
 FROM nginx
-CMD echo "Hello guru"
+CMD echo "Automatic build testing"
