@@ -37,10 +37,10 @@ jobs:
 
       - name: Build Images for dev
         run: |
-	   docker login --username=$DOCKER_USERNAME  --password=$DOCKER_PASSWORD
-	   docker build -t anthonyakhil/firstpush:github .
-	   docker push anthonyakhil/firstpush:github
-	env:
-	  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-	  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          docker login --username=$DOCKER_USERNAME  --password=$DOCKER_PASSWORD
+          docker build -t anthonyakhil/firstpush:github .
+          docker push anthonyakhil/firstpush:github
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
